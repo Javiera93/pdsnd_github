@@ -81,21 +81,21 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
     
-    # TO DO: display the most common month
-    months = ['january', 'february', 'march', 'april', 'may', 'june']
-    month_mode = df["month"].mode()[0] -1
-    common_month = months[month_mode].title()
-    print("Most common month: ", common_month)
+    # TO DO: display the most common start hour
+    common_hour = df["hour"].mode()[0]
+    print("Most common hour: ", common_hour)
     
     # TO DO: display the most common day of week
     days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     common_day = df["day_of_week"].mode()[0]
     print("Most common day: ", common_day)
     
-    # TO DO: display the most common start hour
-    common_hour = df["hour"].mode()[0]
-    print("Most common hour: ", common_hour)  
-    
+    # TO DO: display the most common month
+    months = ['january', 'february', 'march', 'april', 'may', 'june']
+    month_mode = df["month"].mode()[0] -1
+    common_month = months[month_mode].title()
+    print("Most common month: ", common_month)
+        
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -117,7 +117,7 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     df["Start_End"] = df['Start Station'].astype(str) + ' & ' + df['End Station']
     most_common_combination = df["Start_End"].mode()[0]
-    print("The most frequent combination of Start and End Stationn: ", most_common_combination)
+    print("The most frequent combination of Start and End Station: ", most_common_combination)
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -148,10 +148,6 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # TO DO: Display counts of user types
-    count_types_user = df["User Type"].value_counts()
-    print("The count of user types is:", count_types_user) 
-
     # TO DO: Display counts of gender
     if "Gender" in df:
         count_gender = df['Gender'].value_counts()
@@ -162,6 +158,10 @@ def user_stats(df):
         print("Earliest year of birth: ", df["Birth Year"].min())
         print("Most recent year of birth: ", df["Birth Year"].max())
         print("Most common year of birth: ", df["Birth Year"].mode()[0]) 
+        
+    # TO DO: Display counts of user types
+    count_types_user = df["User Type"].value_counts()
+    print("The count of user types is:", count_types_user) 
         
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)

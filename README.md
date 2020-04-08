@@ -6,8 +6,8 @@ Proyecto N°3 Udacity "Git"
 
 ### Description
 Durante este proyecto se desarrollaran diversas tareas solicitadas en git bash, configurando o agregando archivos a un repositorio local,
-el cuál se clono desde https://github.com/Javiera93/pdsnd_github
-
+el cuál se clono desde https://github.com/Javiera93/pdsnd_github.
+El fin de este proyecto es demostrar todos los aprendizajes obtenido durante el curso de udacity.
 ### Files used
 bikeshare.py
 chicago.csv
@@ -19,4 +19,5 @@ README.md
 ### Credits
 hel.github.com
 udacity.com
+git-scm.com
 

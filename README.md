@@ -1,15 +1,22 @@
 ### Date created
-Include the date you created this project and README file.
+08-04-2020
 
 ### Project Title
-Replace the Project Title
+Proyecto N°3 Udacity "Git"
 
 ### Description
-Describe what your project is about and what it does
+Durante este proyecto se desarrollaran diversas tareas solicitadas en git bash, configurando o agregando archivos a un repositorio local,
+el cuál se clono desde https://github.com/Javiera93/pdsnd_github
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
+README.md
+.gitignore
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+hel.github.com
+udacity.com
 
